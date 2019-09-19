@@ -1,10 +1,30 @@
-import React,{Component} from 'react';
+import React from 'react';
+import '../css/Contacto.css'
 
-export default class Contacto extends Component {
+ const Contacto = () =>   {
 
-    render() {
+  
         return (
-            <h1>Desde el componente Contacto</h1>
+           <form>
+                <legend>Formulario de contacto</legend>
+                <div className="input-field">
+                    <label>Nombre: </label>
+                    <input type="text" placeholder="Tu Nombre" />
+                </div>
+                <div className="input-field">
+                    <label>Email: </label>
+                    <input id="mail" type="email" placeholder="Tu Email" />
+                </div>
+                <div className=" input-field">
+                    <label>Mensaje: </label>
+                    <textarea></textarea>
+                </div>
+                <div className="input-field enviar">
+                    <input type="submit" value="Enviar" />
+                </div>
+           </form>
         );
-    }
+    
 }
+
+export default Contacto;
